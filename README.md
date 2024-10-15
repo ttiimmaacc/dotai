@@ -1,24 +1,66 @@
-# .ai
 
-This folder contains AI-assisted development tools for improving code quality and consistency.
+# dotai / .ai
 
-## How to use?
+`dotai` is a self-improving AI system designed to track errors and learnings, creating better context-aware interactions in your project.
 
-- Click on the "Use this template" button
-- Create a `.ai` folder in your repository
-- Move the content of this template into the `.ai` folder
+## Features
+- **Codex (codex.md)**: Logs mistakes and learnings.
+- **Learn Protocol (learn.md)**: Updates the Codex after corrections.
+- **Split-Codex**: Categorizes Codex into manageable sections.
+- **Session Management**: Keeps project context across sessions.
 
-## Codex
+## Setup Instructions
 
-### Files
+1. **Clone this repo** or use as a template.
+2. **Create a `.ai` folder** in a new or existing project:
+   ```bash
+   mkdir .ai
+   ```
+3. **Move all files** from the cloned repo into `.ai`.
 
-- [codex.md](codex/codex.md): AI Codex - A repository of learnings and errors.
-- [learn.md](codex/learn.md): AI Learn - Protocol for updating the AI Codex.
+## Usage Workflow
 
-### Usage
+1. **Run Prompt**: Interact with the AI.
+2. **Error**: If AI makes a mistake, correct it by invoking learn.md.
+3. **Invoke Learn**: Enter `@learn.md @codex.md` to update Codex.
+4. **Manage Codex**: Use `@split-codex` to categorize entries.
 
-1. Review the Codex: [codex.md](codex/codex.md) (silent load, no output)
-2. Update the Codex: [learn.md](codex/learn.md)
+## Additional Steps
+
+- Create a Composer/Notepad project named 'Codex' and add `codex.md` to the project context for persistent project memory without needing explicit learn.md mentions.
+
+
+# dotai (improved readme)
+
+`dotai` is a system for AI self-improvement designed to enhance project development by logging errors and learnings and providing contextual awareness across sessions.
+
+## Features
+- **Codex**: A repository that tracks AI errors and learnings (`codex.md`).
+- **Session Management**: Maintains project memory across interactions (`start-session.md` and `end-session.md`).
+- **Blueprints**: Guides for setting up various tech stacks. (by @mckaywrigley)
+- **Snippets**: Code templates to streamline AI's code generation. They help in writing shorter prompts for better results.
+
+## Installation (existing project)
+
+1. **Clone this repository** or use it as a template.
+2. **Create a `.ai` folder** in your existing project:
+   ```bash
+   mkdir .ai
+   ```
+3. **Move the contents of this repo into the `.ai` folder**.
+
+## How to Use
+
+1. **Start a session**: Add `start-session.md` to the `.ai` folder to maintain AI memory across interactions.
+2. **Update Codex**: The AI will log errors and learnings automatically in `codex.md`.
+3. **Use Snippets**: Add code snippets using `create-snippet.md` to enhance AI’s coding suggestions.
+4. **Manage Codex Growth**: Use `split-codex.md` to categorize learnings for scalability.
+
+## Example Workflow
+
+1. **Test with a Prompt**: Ask the AI for help with a prompt.
+2. **Error or Correction**: If the AI makes a mistake, correct it, and it will update `codex.md` to learn from it.
+3. **Session Continuity**: Continue the project with improved AI context and fewer repeated mistakes.
 
 ### Important Note
 
@@ -91,3 +133,4 @@ This is an open-source template. Contributions are welcome! Please add a changel
 ## Note
 
 This system is designed for AI consumption. Entries should prioritize precision and relevance over human readability
+
