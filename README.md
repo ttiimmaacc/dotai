@@ -84,6 +84,8 @@ Comprehensive guides for implementing specific technical architectures:
 - **Libraries**: [lib](lib) contains documentation examples for library usage.
 - **Plugins**: [v0](v0/v0.md) provides a guide for using v0.dev to generate component ideas and prompts.
 - **Rules**: [Rules](rules) contains rules for default AI behavior and interaction.
+   - `code-tutor.md`: To provide a supportive learning environment for beginners learning to code.
+   - `mckay.md`: For efficient, high-level interactions without unnecessary explanations.
 
 ## Contributing
 
